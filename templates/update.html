@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Update User</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="page">
+    <div class="login-card">
+      <h2>Update User</h2>
+
+      <form action="{{ url_for('update', id=user['id']) }}" method="post">
+
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter your name..."
+          value="{{ user['name'] }}"
+          required
+        />
+
+        <input
+          type="number"
+          name="age"
+          placeholder="Enter your age..."
+          value="{{ user['age'] }}"
+          required
+        />
+
+        <input
+          type="tel"
+          name="mobile"
+          placeholder="Enter 10-digit mobile number"
+          pattern="[0-9]{10}"
+          maxlength="10"
+          value="{{ user['mobile'] }}"
+          required
+        />
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter your email address..."
+          value="{{ user['email'] }}"
+          required
+        />
+
+        <button type="submit" class="submit-btn">Update</button>
+      </form>
+
+      <br />
+      <a href="{{ url_for('view') }}" class="btn-link">⬅ Back to List</a>
+    </div>
+  </div>
+</body>
+</html>

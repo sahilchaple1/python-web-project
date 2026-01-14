@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body, html {
+height: 100%;
+background: #121212;
+color: white;
+}
+
+.page {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.login-card {
+width: 360px;
+padding: 30px;
+background: #2d2d2d;
+border-radius: 16px;
+box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+text-align: center;
+color: white;
+transition: all 0.35s ease;
+}
+
+.login-card:hover {
+transform: translateY(-6px) scale(1.02);
+box-shadow: 0 30px 60px rgba(30, 30, 30, 0.8),
+            20px 20px 20px rgba(126, 126, 126, 0.4);
+}
+
+.login-card h2 {
+margin-bottom: 20px;
+}
+
+input {
+width: 100%;
+padding: 12px;
+border-radius: 10px;
+border: none;
+margin-bottom: 12px;
+background: #020617;
+border: 1px solid #1e293b;
+color: white;
+}
+
+input::placeholder {
+color: #64748b;
+}
+
+.submit-btn {
+width: 100%;
+padding: 12px;
+margin-top: 10px;
+background: linear-gradient(135deg, #2563eb, #1d4ed8);
+color: white;
+border: none;
+border-radius: 10px;
+font-size: 15px;
+font-weight: 600;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+background: linear-gradient(135deg, #1e40af, #1d4ed8);
+transform: translateY(-2px);
+box-shadow: 0 10px 20px rgba(37, 99, 235, 0.4);
+}
+
+.submit-btn:active {
+transform: translateY(0);
+box-shadow: none;
+}
+
+.btn-link {
+display: inline-block;
+padding: 10px 20px;
+background-color: #007BFF;
+color: white !important;
+text-decoration: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+margin-left: 45%;
+}
+
+.btn-link:hover {
+background-color: #0056b3;
+}
+
+.btn-link.small {
+padding: 5px 10px;
+font-size: 13px;
+}
+
+.btn-delete {
+background: #dc2626;
+border: none;
+padding: 6px 12px;
+color: white;
+border-radius: 5px;
+cursor: pointer;
+font-size: 13px;
+margin-left: 8px;
+}
+
+.btn-delete:hover {
+background: #b91c1c;
+}
+
+/* Table styles */
+table {
+width: 90%;
+margin: 0 auto 30px auto;
+border-collapse: collapse;
+color: white;
+}
+
+th, td {
+border: 1px solid #444;
+padding: 12px 15px;
+text-align: center;
+}
+
+th {
+background-color: #222;
+}
+.user-data {
+  margin-left: 45%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
