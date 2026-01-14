@@ -126,5 +126,8 @@ def download_pdf():
     buffer.seek(0)
     return send_file(buffer, as_attachment=True, download_name="users.pdf", mimetype="application/pdf")
 
+
+    
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=10000)
+
